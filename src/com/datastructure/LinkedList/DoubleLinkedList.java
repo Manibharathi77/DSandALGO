@@ -65,19 +65,27 @@ public class DoubleLinkedList {
         dll.insert(7);
         dll.insert(4);
         dll.insert(9);
-//        dll.insert(5);
-//        dll.insert(88);
-//        dll.insert(89);
-//        dll.insert(90);
+        dll.insert(5);
+        dll.insert(88);
+        dll.insert(89);
+        dll.insert(90);
+
+        DoubleLinkedList dll2 = new DoubleLinkedList();
+        dll2.insert(7);
+        dll2.insert(4);
+        dll2.insert(9);
+        dll2.insert(5);
 
 //        System.out.println(dll);
 
 //        System.out.println(FindMidOfLinkedList.getMidValue(dll.head));
-        RemoveDuplicates.removeDuplicate(dll.head);
-        System.out.println("removed duplicated");
-        dll.iterateThrough(dll);
-//        dll.head.next.next = dll.head.next;
-//        System.out.println(LoopInLinkedList.detectLoop(dll.head));
+//        RemoveDuplicates.removeDuplicate(dll.head);
+//        System.out.println("removed duplicated");
+//        dll.iterateThrough(dll);
+        dll.head.next.next = dll.head.next;
+        System.out.println(LoopInLinkedList.detectLoop(dll.head));
+//        dll.iterateThrough(UnionAndIntersectionOfLinkedList.getIntersection(dll,dll2));
+        dll.iterateThrough(UnionAndIntersectionOfLinkedList.getUnion(dll,dll2));
     }
 
 }

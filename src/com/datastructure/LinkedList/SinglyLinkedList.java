@@ -9,7 +9,9 @@ public class SinglyLinkedList {
     // method to delete a node.
     // traverse through the nodes.
 
-    class Node {
+    static class Node {
+
+        Node(){}
 
         int data;
         Node next; //pointer to next node. will be null if only or last node.

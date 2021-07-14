@@ -1,9 +1,17 @@
 package com.datastructure.LinkedList;
 
 
-public class DoubleLinkedList {
+import java.io.*;
+import java.nio.CharBuffer;
+
+public class DoubleLinkedList  implements Serializable, Readable {
 
     Node head;
+
+    @Override
+    public int read(CharBuffer cb) throws IOException {
+        return 0;
+    }
 
     static class Node{
 
@@ -11,6 +19,12 @@ public class DoubleLinkedList {
         Node prev,next;
 
         Node(int data){
+
+            try{
+
+            }catch (Exception ignored){
+
+            }
             this.data = data;
             prev = next = null;
         }
@@ -45,6 +59,10 @@ public class DoubleLinkedList {
 
         return head;
 
+    }
+
+    public static void dummyMethod(Integer integer){
+        System.out.println("Do nothing");
     }
 
     public void iterateThrough(DoubleLinkedList ll){
